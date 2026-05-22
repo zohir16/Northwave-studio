@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Northwave Studio builds modern, responsive and high-performance websites for businesses and creators."
+    />
+    <title>Northwave Studio</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <!--topbar-->
+      <div class="topbar">
+        <p>✨ Welcome to Northwave Studio — Modern Web Experiences</p>
+      </div>
+
+      <!--navbar-->
+      <div class="container nav">
+        <div class="logo">
+          <a href="#home" class="logo">
+            <span class="logo__mark">NW</span>
+            Northwave Studio
+          </a>
+        </div>
+
+        <!-- OVERLAY -->
+        <div class="nav__overlay"></div>
+
+        <nav class="nav__menu">
+          <!-- CLOSE BUTTON -->
+          <button class="nav__close">✕</button>
+
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+
+          <div class="nav__flag">
+            <img src="icons/united-states-of-america.png" alt="USA Flag" />
+          </div>
+        </nav>
+
+        <div class="nav__lang">
+          <a href="../index.html">EN</a>
+          <span>🌐</span>
+          <a href="ar/index.html">AR</a>
+        </div>
+
+        <button class="nav__toggle">☰</button>
+      </div>
+    </header>
+
+    <!--hero section-->
+    <section id="home" class="hero">
+      <div class="container hero__content">
+        <h1>We build modern websites that make brands stand out</h1>
+        <p>
+          Velora Studio creates clean, fast, and beautiful digital experiences
+          for businesses and creators.
+        </p>
+        <div class="hero__buttons">
+          <a href="#work" class="btn btn__primary">View Work</a>
+          <a href="#contact" class="btn btn__secondary">Contact</a>
+        </div>
+        <div class="hero__highlights">
+          <span>Clean UI Design</span>
+          <span>Responsive Layouts</span>
+          <span>Fast & lightweight</span>
+        </div>
+      </div>
+    </section>
+
+    <!---- services section-->
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section__title">Services</h2>
+        <p class="services__subtitle">What I can do for your project</p>
+
+        <div class="services__grid">
+          <div class="services__card" data-aos="zoom-in">
+            <div class="service__icon">🎨</div>
+            <h3>Clean UI Design</h3>
+            <p>Modern, minimal and user-friendly interfaces.</p>
+          </div>
+
+          <div
+            class="services__card"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+          >
+            <div class="service__icon">📱</div>
+            <h3>Responsive Layouts</h3>
+            <p>Perfect experience across all devices and screens.</p>
+          </div>
+
+          <div class="services__card">
+            <div class="service__icon">⚡</div>
+            <h3>Fast & Lightweight</h3>
+            <p>Optimized code for speed and performance.</p>
+          </div>
+
+          <div class="services__card">
+            <div class="service__icon">🚀</div>
+            <h3>Performance Optimization</h3>
+            <p>Improving speed, SEO and overall site efficiency.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--ABOUT SECTION-->
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about__card">
+          <div class="about__grid">
+            <!-- IMAGE -->
+            <div class="about__image">
+              <img src="images/zohir.jpg" alt="Zohir Profile" />
+            </div>
+
+            <!-- CONTENT -->
+            <div class="about__content">
+              <h2 class="section__title">About Me</h2>
+
+              <p>
+                I’m a junior web developer with 2 years of experience building
+                clean and modern websites.
+              </p>
+
+              <p>
+                I focus on UI design, performance, and creating responsive
+                layouts that work smoothly across all devices.
+              </p>
+
+              <p>
+                I’ve worked on personal projects and I’m constantly improving my
+                frontend development skills.
+              </p>
+
+              <blockquote class="about__quote">
+                “I love building simple, fast and user-friendly interfaces that
+                actually solve real problems.”
+              </blockquote>
+
+              <span class="about__mindset"> — My Mindset </span>
+
+              <div class="about__certs">
+                <ul>
+                  <li>HTML & CSS Certification</li>
+                  <li>HTML & CSS Advanced Certification</li>
+                  <li>Ultimate JavaScript Part1 & Part2: Advanced Topics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--WORK SECTION-->
+
+    <section id="work" class="work">
+      <div class="container">
+        <h2 class="section__title">My Work</h2>
+        <p class="section__subtitle">
+          A few projects I’ve built while learning and improving my skills.
+        </p>
+        <div class="work__slider">
+          <!-- SLIDES -->
+          <div class="work__slides">
+            <img
+              class="work__slide active"
+              src="images/runex.png"
+              alt="Project One"
+            />
+
+            <img
+              class="work__slide"
+              src="images/under-one-roof.png"
+              alt="Project Two"
+            />
+
+            <img
+              class="work__slide"
+              src="images/first-web.png"
+              alt="Project Three"
+            />
+          </div>
+        </div>
+
+        <!--DOTS-->
+        <div class="work__dots">
+          <span class="work__dot active"></span>
+
+          <span class="work__dot"></span>
+
+          <span class="work__dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!----CONTACT SECTION--->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section__title">Contact</h2>
+        <p class="section__subtitle">
+          Feel free to reach out if you’d like to work together.
+        </p>
+
+        <form class="contact__form">
+          <input type="text" name="name" placeholder="Your Name" required />
+
+          <input type="email" name="email" placeholder="Your Email" required />
+
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn btn__primary">Send Message</button>
+        </form>
+
+        <div class="contact__email">
+          <p>Or reach me directly:</p>
+          <a href="mailto:coderpro57@gmail.com">coderpro57@gmail.com</a>
+        </div>
+      </div>
+    </section>
+
+    <!---FOOTER--->
+    <footer class="footer">
+      <div class="container footer__wrapper">
+        <!-- BRAND -->
+
+        <div class="footer__brand">
+          <h3>Northwave Studio</h3>
+
+          <p>Building clean and modern web experiences.</p>
+        </div>
+
+        <!-- LINKS -->
+
+        <div class="footer__links">
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- CONTACT -->
+
+        <div class="footer__contact">
+          <h4>Contact</h4>
+
+          <p>
+            Email:
+            <a href="mailto:coderpro57@gmail.com">coderpro57@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Northwave Studio. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

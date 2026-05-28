@@ -222,13 +222,10 @@
     z-index: 1001;
 
   }
-  .nav__close {
-    display: block;
-  }
+
   /* OVERLAY */
 
   .nav__overlay {
-
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.45);
@@ -240,9 +237,8 @@
   }
 
   .nav__overlay.active {
-
+    display: block;
     opacity: 1;
-
     visibility: visible;
 
   }
@@ -275,21 +271,14 @@
   /* CLOSE BUTTON */
 
   .nav__close {
-
+    display: block;
     position: absolute;
-
     top: 1.5rem;
-
     right: 1.5rem;
-
     background: none;
-
     border: none;
-
     font-size: 1.8rem;
-
     cursor: pointer;
-
     color: #111;
 
   }
@@ -809,6 +798,21 @@ line-height: 1.5;
   color: #ffffff;
 }
 
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.footer__brand .logo {
+  display: inline-flex;
+  color: #ffffff;
+}
+.footer__brand p {
+  margin-top: 1rem;
+}
 .footer__bottom {
   text-align: center;
   margin-top: 3rem;
